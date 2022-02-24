@@ -1,0 +1,305 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+main{
+  overflow: hidden;
+}
+
+/* ----navigation ---- */
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.nav-bar ul{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 15px;
+  gap: 30px;
+}
+
+.nav-bar li{
+  list-style-type: none;
+  padding: 15px;
+}
+
+.nav-bar a{
+  border: 1px solid #F6FFC9;
+  text-align: center;
+  color: #F6FFC9;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 15px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(246, 255, 201, .95);
+}
+/*effect an hover inner shadow like is pushed*/
+.nav-bar a:hover{
+  font-size: 1.49em;
+  color: rgba(246, 255, 201, .95);
+  /*background-color: #F6FFC9;*/
+  box-shadow: rgb(246, 255, 201) 3px 3px 6px 0px inset, rgba(246, 255, 201, .95) -3px -3px 6px 1px inset;
+  /*box-shadow: 0 -2px -6px rgba(246, 255, 201, .95) inset;*/
+}
+
+header{
+  background: linear-gradient(0deg, rgba(000,0,0,0.1), rgba(000,0,0,0.6)),
+              url('img/chiesa.jpg') no-repeat 50% 0 fixed;
+  background-size: 1960px 1020px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+ h1{ font-size: 70px; color: #FFE3E0; letter-spacing: 4px; font-weight: 700;}
+ h2{ font-size: 40px; color: #FFE3E0; font-weight: 300; letter-spacing: 3px;}
+
+
+div.container{
+  margin-bottom: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+}
+
+.container div.aboutus{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+section.col-3,
+section.col-2{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.port{
+  padding: 25px 35px;
+  text-align: center;
+}
+div.blog{
+  padding: 25px 52px;
+}
+
+article.info1,
+article.info2{
+  background-color: #f1f1f1;
+}
+
+article.info1 h2,
+article.info1 p{
+  padding: 20px;
+}
+
+article.info2 h2,
+article.info2 p{
+  padding: 20px;
+}
+
+
+/* ---- Section service ---- */
+
+div .service{
+  background: linear-gradient(0deg, rgba(000,0,0,0.4), rgba(000,0,0,0.7)),
+              url('img/montegne.jpg') no-repeat 50% 0 fixed;
+  background-size: 1960px 1020px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.containe2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vh;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+
+div.project1{
+  display: flex;
+  text-align: center;
+  color: #000;
+  margin: 40px  13px;
+  gap: 13px;
+}
+
+div.project2{
+  display: flex;
+  text-align: center;
+  color: #000;
+  margin: auto 10px;
+}
+section.col-4,
+section.big{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.project1 article,
+.project2 article{
+  background: #f1f1f1;
+}
+
+.project1 article h2,
+.project1 article p{
+  padding: 20px;
+}
+
+.big .project2 article h2,
+.big .project2 article p{
+   padding: 25px;
+}
+
+.project1 article a,
+.project2 article a{
+  margin: 15px auto;
+  display: block;
+  width: 150px;
+  text-decoration: none;
+  border: 1px solid #aaa;
+  padding:10px 15px;
+  border-radius: 10px;
+  color: #000;
+  box-shadow: rgba(136, 165, 191, 0.58) 6px 2px 16px 0px,
+              rgba(255, 255, 255, 0.18) -6px -2px 16px 0px;
+}
+
+.project1 article a:hover,
+.project2 article a:hover{
+  box-shadow: none;
+/*  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px inset,
+              rgba(255, 255, 255, 0.8) -6px -2px 16px 0px inset;*/
+}
+
+/* ----Section form ----*/
+
+.contact__form{
+  background: linear-gradient(0deg, rgba(000,0,0,0.4), rgba(000,0,0,0.7)),
+              url('img/mare.jpg') no-repeat 50% 0 fixed;
+  background-size: 1960px 1020px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+/*  background-color:rgba(203, 203, 203, 0.6);*/
+}
+
+.info{
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  background-color:rgba(203, 203, 203, 0.25);
+  border-radius: 5px;
+}
+
+section.visitor__data input{
+  background-color:rgba(203, 203, 203, 0.25);
+  border: none;
+  border-radius: 5px;
+  margin: 17px 25px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  width: 350px;
+}
+
+section.visitor__data input:focus{
+  outline: 0;
+  box-shadow: 1px 1px 6px #fff;
+}
+
+section.text__area textarea{
+  background-color:rgba(203, 203, 203, 0.25);
+  width: 345px;
+  border: none;
+  padding: 10px;
+  margin: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  resize: none;
+}
+
+section.text__area textarea:focus{
+  outline: 0;
+  box-shadow: 1px 1px 6px #fff;
+}
+
+section.text__area input{
+  font-size: 25px;
+  padding: 8px 15px;
+  transform: translate(-50px, 25px);
+  position: absolute;
+  color: black;
+  background: #7c7c7c;
+  font-weight: 300;
+  border-color: #aaa;
+  border-radius: 5px;
+  width: 150px;
+}
+
+section.text__area input:hover{
+  box-shadow: 2px 4px 8px #fff, -2px -4px 8px #fff;
+  background: #a7a7a7;
+}
+
+/* ---- footer ---- */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 45px 35px;
+  margin:auto;
+}
+footer h2{
+  color: #000;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.copy{
+  display: flex;
+  margin-top: 10px;
+}
