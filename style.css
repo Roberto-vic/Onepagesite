@@ -49,9 +49,9 @@ main{
 .nav-bar a:hover{
   font-size: 1.49em;
   color: rgba(246, 255, 201, .95);
-  /*background-color: #F6FFC9;*/
-  box-shadow: rgb(246, 255, 201) 3px 3px 6px 0px inset, rgba(246, 255, 201, .95) -3px -3px 6px 1px inset;
-  /*box-shadow: 0 -2px -6px rgba(246, 255, 201, .95) inset;*/
+  background-color: #F6FFC9;
+  /*box-shadow: rgb(246, 255, 201) 3px 3px 6px 0px inset, rgba(246, 255, 201, .95) -3px -3px 6px 1px inset;*/
+  box-shadow: 0 -2px -6px rgba(246, 255, 201, .95) inset;
 }
 
 header{
